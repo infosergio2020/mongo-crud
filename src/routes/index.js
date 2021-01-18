@@ -5,7 +5,6 @@ const Task = require('../models/task');
 
 router.get('/',async (req,res)=>{
     const tasks = await Task.find();
-    console.log(tasks);
     res.render('index', {
         tasks 
     });
